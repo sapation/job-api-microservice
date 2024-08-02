@@ -1,14 +1,14 @@
 package com.webtech.jobms.job;
 
-import com.webtech.jobms.job.dto.JobWithCompanyDTO;
+import com.webtech.jobms.job.dto.JobDTO;
 
 import java.util.List;
 
 public interface JobService {
-    List<JobWithCompanyDTO> findAll();
+    List<JobDTO> findAll();
     void createJob(Job job);
 
-    Job findJobById(Long id);
+    JobDTO findJobById(Long id);
 
     boolean deleteJobById(Long id);
 
